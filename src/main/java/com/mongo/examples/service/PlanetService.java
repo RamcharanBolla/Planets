@@ -1,9 +1,10 @@
-package com.planets.planetInfo.service;
+package com.mongo.examples.service;
 
-import com.planets.planetInfo.dao.PlanetRepository;
-import com.planets.planetInfo.model.Planet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.mongo.examples.model.Planet;
+import com.mongo.examples.planet.repository.PlanetRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -13,6 +14,7 @@ public class PlanetService {
 
     @Autowired
     private PlanetRepository planetRepository;
+
     public List<Planet> getPlanets() {
         return planetRepository.findAll();
     }

@@ -1,4 +1,4 @@
-package com.planets.planetInfo.model;
+package com.mongo.examples.model;
 
 import lombok.Data;
 import org.bson.types.ObjectId;

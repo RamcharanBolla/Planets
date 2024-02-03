@@ -1,4 +1,4 @@
-package com.planets.planetInfo.model;
+package com.mongo.examples.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

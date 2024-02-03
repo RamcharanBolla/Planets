@@ -1,12 +1,13 @@
-package com.planets.planetInfo.controller;
+package com.mongo.examples.controller;
 
-import com.planets.planetInfo.model.Planet;
-import com.planets.planetInfo.service.PlanetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.mongo.examples.model.Planet;
+import com.mongo.examples.service.PlanetService;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,14 +1,16 @@
-package com.planets.planetInfo.dao;
+package com.mongo.examples.planet.repository;
 
-import com.planets.planetInfo.model.Planet;
+import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
+
+import com.mongo.examples.model.Planet;
 
 import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface PlanetRepository extends MongoRepository<Planet,String> {
+public interface PlanetRepository extends MongoRepository<Planet,ObjectId> {
 
     Optional<Planet> findByName(String name);
 

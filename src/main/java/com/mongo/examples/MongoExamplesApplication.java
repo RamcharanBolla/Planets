@@ -1,13 +1,13 @@
-package com.planets.planetInfo;
+package com.mongo.examples;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PlanetInfoApplication {
+public class MongoExamplesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PlanetInfoApplication.class, args);
+		SpringApplication.run(MongoExamplesApplication.class, args);
 	}
 
 }

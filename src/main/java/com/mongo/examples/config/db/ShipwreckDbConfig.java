@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @Configuration
-@EnableMongoRepositories(basePackages = {"com.mongo.examples.shipwreck.repository"},
+@EnableMongoRepositories(basePackages = {"com.mongo.examples.shipwreck.repository","com.mongo.examples.reactive.shipwreck.repository"},
 mongoTemplateRef = ShipwreckDbConfig.MONGO_TEMPLATE
 )
 public class ShipwreckDbConfig {
